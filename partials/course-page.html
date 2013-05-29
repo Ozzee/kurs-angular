@@ -1,6 +1,38 @@
 <h2>{{ current.id }} - {{ current.name }}</h2>
-<p class="small">noppa</p>
-<a href="#/"><button class="tiny alert" ng-click="removeCourse(current)">Leave</button></a>
+<div><a href="#" class="small">noppa</a></div>
+
+
+<div class="right">
+    <a href="#/">
+        <button class="tiny alert right" ng-click="removeCourse(current)">Leave</button>
+    </a>
+</div>
+
+<br>
+
+<div class="left">
+    <form>
+        <label for="status">Looking for: </label>
+        <select name="status" id="status">
+            <option value="looking">Group</option>
+            <option value="members">Group-members</option>
+            <option value="none">Nothing</option>
+        </select>
+
+    </form>
+
+    <form>
+        <label for="publicity">Publicity: </label>
+        <select name="publicity" id="publicity">
+            <option value="public">Public</option>
+            <option value="friends">Friends</option>
+            <option value="looking">Private</option>
+        </select>
+
+    </form>
+</div>
+
+<hr>
 
 <h3>Friends</h3>
 

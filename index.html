@@ -26,8 +26,8 @@
 
 	<div class="row">
 		<div class="large-12 columns">
-			<h2>Test</h2>
-            <p><a href="#/about">About</a></p>
+			<h2>KURS</h2>
+            <a href="#">Home</a><span> | </span><a href="#/about">About</a>
 			<hr />
 		</div>
 	</div>
@@ -35,7 +35,7 @@
 	<div class="row">
 		<div class="large-12 columns">
 			<div class="row">
-				<div class="large-4 columns">
+				<div class="large-3 columns">
                     <div class="row collapse">
                         <div class="small-10 columns">
                             <input ng-model="search" type="text" placeholder="Search">
@@ -45,16 +45,16 @@
                         </div>
                     </div>
 
-					<p>My Courses</p>
+					<h2 class="subheader">My Courses</h2>
 
 
-                    <ul>
+                    <ul class="side-nav">
                         <li ng-repeat="course in courses"><a href="#/{{course.id}}" />{{course.id }} - {{ course.name }}</a></li>
                     </ul>
 
 				</div>
-				<div class="large-8 columns">
-					<div ng-view>
+				<div class="large-9 columns">
+					<div class="panel" ng-view>
 
 					</div>
 				</div>
